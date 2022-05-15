@@ -18,7 +18,7 @@ export default function AlignItemsList() {
           <CardContent>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
-                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="/static/images/hitode.png" />
+                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="/static/images/icon.png" />
               </ListItemAvatar>
               <ListItemText sx={{ml: '15px', fontSize:{xs:12,sm:12,md:15,lg:18} }} 
                 primary={<React.Fragment><Typography
@@ -48,7 +48,7 @@ export default function AlignItemsList() {
                     variant="caption"
                     color='text.secondary'
                   >
-            {"倒すポケモン、手持ちの状態などを元に努力値を自動計算しカウントするツールです。手持ち全員にカウントする『学習装置機能』などがあり、”ゲーム内に存在する仕様に忠実”な所が特徴です。剣盾および過去作(※初代-赤緑青ピカ、第2世代-金銀水晶を除く)で使えます！"}
+            {"倒すポケモン、手持ちの状態などを元に努力値を自動計算しカウントするツールです。手持ち全員にカウントする『学習装置機能』などがあり、”ゲーム内に存在する仕様に忠実”な所が特徴です。\nポケットモンスターシリーズ-剣盾および過去作(※初代-赤緑青ピカ、第2世代-金銀水晶を除く)に対応！"}
             </Typography>
             </ListItem>
           </CardContent>
@@ -72,7 +72,7 @@ export default function AlignItemsList() {
                 </Typography></React.Fragment>}
                 secondary={<React.Fragment>
                   <Typography
-                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20},}}
+                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20}, whiteSpace: 'pre-wrap'}}
                     component="span"
                     variant="body2"
                     color="text.primary"
@@ -89,7 +89,7 @@ export default function AlignItemsList() {
                     variant="caption"
                     color='text.secondary'
                   >
-            {"2022年冬、リリース予定\nーポケモンSVに向けて考案中"}
+            {"2022年冬、リリース予定\nーポケモンSVに向けて考案中。"}
             </Typography>
             </ListItem>
           </CardContent>
