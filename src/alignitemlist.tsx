@@ -18,7 +18,7 @@ export default function AlignItemsList() {
           <CardContent>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
-                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="/static/images/icon.png" />
+                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="./images/icon.png" />
               </ListItemAvatar>
               <ListItemText sx={{ml: '15px', fontSize:{xs:12,sm:12,md:15,lg:18} }} 
                 primary={<React.Fragment><Typography
@@ -59,7 +59,7 @@ export default function AlignItemsList() {
           <CardContent>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
-                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="/static/images/noimage.png" />
+                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="./images/noimage.png" />
               </ListItemAvatar>
               <ListItemText sx={{ml: '15px', fontSize:{xs:12,sm:12,md:15,lg:18} }} 
                 primary={<React.Fragment><Typography
