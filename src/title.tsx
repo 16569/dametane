@@ -39,7 +39,7 @@ export default function BoxSx() {
               <Avatar sx={{
                   width: { xs: 30, sm: 40, md: 52, lg: 60 },
                   height: { xs: 30, sm: 40, md: 52, lg: 60 },
-              }} alt="Travis Howard" src="/static/images/haikyo.png" />
+              }} alt="Travis Howard" src="./images/haikyo.png" />
               <Box sx={{
                   //width: 'auto', 
                   //display:"table-cell",  
