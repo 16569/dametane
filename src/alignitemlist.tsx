@@ -1,7 +1,6 @@
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
@@ -12,58 +11,90 @@ import CardContent from '@mui/material/CardContent';
 
 export default function AlignItemsList() {
   return (
-    <List sx={{ width: '100%', maxWidth: "sm", bgcolor: '#b9d08b' }}>
-    <Card sx={{ maxWidth: "sm", margin: 2}}>
-      <CardContent>
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/logo.png" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="努力値ツール"
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-                剣盾まで対応！
-              </Typography>
-              {"倒すポケモンを指定して加算値を自動計算。持ち物、ポケルスなどの状態に対応。育成アイテムも使える。学習装置で手持ちにも並行で分配可能！"}
-            </React.Fragment>
-          }
-        />
-      </ListItem>
-      </CardContent>
-      </Card>
-      <Card sx={{ maxWidth: "sm", margin: 2 }}>
-      <CardContent>
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="対面シミュレーター"
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-                待望のダメージレースシミュレータ(開発中)。
-              </Typography>
-              {"-2022年冬、リリース予定"}
-            </React.Fragment>
-          }
-        />
-      </ListItem>
-      </CardContent>
-      </Card>
+    <>
+      
+      <List sx={{ width: '100%', maxWidth: "md", bgcolor: '#dcd6d9' }}>
+        <Card sx={{ maxWidth: "md", margin: 2 }}>
+          <CardContent>
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="/static/images/hitode.png" />
+              </ListItemAvatar>
+              <ListItemText sx={{ml: '15px', fontSize:{xs:12,sm:12,md:15,lg:18} }} 
+                primary={<React.Fragment><Typography
+                  sx={{ display: 'inline', fontSize:{xs:18,sm:18,md:20,lg:22},}}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                  努力値ツール
+                </Typography></React.Fragment>}
+                secondary={<React.Fragment>
+                  <Typography
+                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20},}}
+                    component="span"
+                    variant="body2"
+                    color="text.primary"
+                  >
+                    まもなくリリース！（2022年6月頃）
+                  </Typography>
+                  
+                </React.Fragment>} />
+            </ListItem>
+            <ListItem>
+            <Typography
+                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20}, whiteSpace: 'pre-wrap'}}
+                    component="span"
+                    variant="caption"
+                    color='text.secondary'
+                  >
+            {"倒すポケモン、手持ちの状態などを元に努力値を自動計算しカウントするツールです。手持ち全員にカウントする『学習装置機能』などがあり、”ゲーム内に存在する仕様に忠実”な所が特徴です。剣盾および過去作(※初代-赤緑青ピカ、第2世代-金銀水晶を除く)で使えます！"}
+            </Typography>
+            </ListItem>
+          </CardContent>
+        </Card>
 
-    </List>
+        
+        <Card sx={{ maxWidth: "md", margin: 2 }}>
+          <CardContent>
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="/static/images/noimage.png" />
+              </ListItemAvatar>
+              <ListItemText sx={{ml: '15px', fontSize:{xs:12,sm:12,md:15,lg:18} }} 
+                primary={<React.Fragment><Typography
+                  sx={{ display: 'inline', fontSize:{xs:18,sm:18,md:20,lg:22},}}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                  対面シミュレーター
+                </Typography></React.Fragment>}
+                secondary={<React.Fragment>
+                  <Typography
+                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20},}}
+                    component="span"
+                    variant="body2"
+                    color="text.primary"
+                  >
+                    AIにお任せのダメージレースシミュレータ！
+                  </Typography>
+                  
+                </React.Fragment>} />
+            </ListItem>
+            <ListItem>
+            <Typography
+                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20},}}
+                    component="span"
+                    variant="caption"
+                    color='text.secondary'
+                  >
+            {"2022年冬、リリース予定\nーポケモンSVに向けて考案中"}
+            </Typography>
+            </ListItem>
+          </CardContent>
+        </Card>
+
+      </List></>
   );
 }
