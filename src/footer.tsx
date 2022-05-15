@@ -7,7 +7,7 @@ export default function Footer() {
     <>
     {/* <Divider variant="middle" /> */}
     <Typography sx={{
-          fontSize: 12,
+          fontSize: 15,
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
