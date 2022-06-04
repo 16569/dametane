@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import AppStore from './storelink';
 
 export default function AlignItemsList() {
   return (
@@ -30,16 +31,17 @@ export default function AlignItemsList() {
                   努力値ツール
                 </Typography></React.Fragment>}
                 secondary={<React.Fragment>
-                  <Typography
+                  {/* <Typography
                     sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20},}}
                     component="span"
                     variant="body2"
                     color="text.primary"
                   >
                     まもなくリリース！（2022年6月頃）
-                  </Typography>
-                  
+                  </Typography> */}
+                  <AppStore></AppStore>
                 </React.Fragment>} />
+                
             </ListItem>
             <ListItem>
             <Typography
