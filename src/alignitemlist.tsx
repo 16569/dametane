@@ -87,10 +87,10 @@ export default function AlignItemsList() {
                     
                    
 
-                    <Stack direction="row">
+                    {/* <Stack direction="row">
                       <AccelGooglePlay></AccelGooglePlay>
                       <AccelStore></AccelStore>
-                    </Stack>
+                    </Stack> */}
 
                   </Typography>
                   
@@ -103,6 +103,10 @@ export default function AlignItemsList() {
                     variant="caption"
                     color='text.secondary'
                   >
+                    <Stack direction="row">
+                      <AccelGooglePlay></AccelGooglePlay>
+                      <AccelStore></AccelStore>
+                    </Stack>
             {"第一弾ーダメージ計算機\n\tタブにポケモンを並べられる便利なダメージ計算機！"}
             </Typography>
             </ListItem>
