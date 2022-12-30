@@ -9,6 +9,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import AppStore from './storelink';
+import AccelGooglePlay from './accel_googleplay';
+import AccelStore from './store_accel';
+import { Stack } from '@mui/material';
 
 export default function AlignItemsList() {
   return (
@@ -61,7 +64,7 @@ export default function AlignItemsList() {
           <CardContent>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
-                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="./images/noimage.png" />
+                <Avatar sx={{ width: 100, height: 100 }} variant="rounded" alt="Remy Sharp" src="./images/appicon.png" />
               </ListItemAvatar>
               <ListItemText sx={{ml: '15px', fontSize:{xs:12,sm:12,md:15,lg:18} }} 
                 primary={<React.Fragment><Typography
@@ -70,7 +73,7 @@ export default function AlignItemsList() {
                   variant="body2"
                   color="text.primary"
                 >
-                  対面シミュレーター
+                  アクセルSV
                 </Typography></React.Fragment>}
                 secondary={<React.Fragment>
                   <Typography
@@ -79,19 +82,28 @@ export default function AlignItemsList() {
                     variant="body2"
                     color="text.primary"
                   >
-                    AIにお任せのダメージレースシミュレータ！
+                    AIにお任せのダメージレースシミュレータ！(仮)
+                   
+                    
+                   
+
+                    <Stack direction="row">
+                      <AccelGooglePlay></AccelGooglePlay>
+                      <AccelStore></AccelStore>
+                    </Stack>
+
                   </Typography>
                   
                 </React.Fragment>} />
             </ListItem>
             <ListItem>
             <Typography
-                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20},}}
+                    sx={{ display: 'inline', fontSize:{xs:16,sm:16,md:18,lg:20}, whiteSpace: 'pre-wrap'}}
                     component="span"
                     variant="caption"
                     color='text.secondary'
                   >
-            {"2022年冬、リリース予定\nーポケモンSVに向けて考案中。"}
+            {"第一弾ーダメージ計算機\n\tタブにポケモンを並べられる便利なダメージ計算機！"}
             </Typography>
             </ListItem>
           </CardContent>
